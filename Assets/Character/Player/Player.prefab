@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 5727682972296427722}
   - component: {fileID: 8432378306788236115}
   - component: {fileID: 6680256061105327603}
+  - component: {fileID: 484576430534282061}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -319,7 +320,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCooldown: 0.5
   attackAnimationTrigger: Attack
-  hitboxActiveDuration: 0.2
   animator: {fileID: 7970176159225785422}
   playerInput: {fileID: 6257970538749276141}
   hitbox: {fileID: 9063277778269846690}
@@ -354,7 +354,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 8432378306788236115}
   playerAttack: {fileID: 5727682972296427722}
+  playerHealth: {fileID: 484576430534282061}
   attackSpeedReduction: 0.2
+--- !u!114 &484576430534282061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2925861344649402360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 943eeb97ad2bb004b80750ba75a733eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 100
 --- !u!1 &9063277778269846690
 GameObject:
   m_ObjectHideFlags: 0

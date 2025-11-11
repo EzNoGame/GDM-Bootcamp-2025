@@ -5,6 +5,7 @@ public class PlayerManager : Singleton<PlayerManager>
     [Header("Player Components")]
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private PlayerAttackComponent playerAttack;
+    [SerializeField] private PlayerHealthComponent playerHealth;
     
     [Header("Attack Settings")]
     [SerializeField] private float attackSpeedReduction = 0.2f;
