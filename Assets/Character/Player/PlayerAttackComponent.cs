@@ -98,6 +98,8 @@ public class PlayerAttackComponent : MonoBehaviour
         }
         
         Debug.Log("Player is attacking!");
+
+        AudioManager.Instance.PlayAttackSFX();
     }
     
     // Animation event methods (call these from animation events)
